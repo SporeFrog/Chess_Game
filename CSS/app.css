@@ -1,0 +1,40 @@
+/* h1,h2{
+    font-size: 40px;
+    color:darkgreen;
+}
+
+body{
+    background: color #f1aeef;
+    
+}
+
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+#signup{
+    color:darkblue;
+    background-color:yellow;
+} */
+
+.post a{
+    color:lightblue
+}
+footer a{
+    color:red
+}
+
+a:hover{
+    color:lime;
+    background-color:purple;
+}
+
+button:hover{
+    color:red;
+    background-color:salmon;
+}
+
+button:active{
+    color:green;
+    background-color:lime;
+}

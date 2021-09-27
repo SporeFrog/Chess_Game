@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+<body>
+    <h1>Forms Practice</h1>
+    <button>Outside of Form</button>
+    <form action="/tacos/">
+        <button type="button">Please do not press submit!</button>
+        <p>
+            <label for="username">Enter a Username</label>
+            <input id="username"type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter your password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Choose your Favorite Color</label>
+            <input id="color"type="color">
+        </p>
+        <p>
+            <label for="number">Pick a lucky number</label>
+            <input id="number" type="number" placeholder="enter a number">          
+        </p>
+        <button>Submit</button>
+       
+    </form>
+    <h2>Hijacking Searches</h2>
+    <h3>Hijack Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <p>
+            <label for="redditsearch">Search Reddit</label>
+            <input id="redditsearch" type="text" name="q">
+            <button>Search Reddit</button>
+        </p>
+    </form>
+    <h3>Hijack Google</h3>
+    <form action="https://www.google.com/search">
+        <p>
+            <label for="googlesearch">Search Google</label>
+            <input id="googlesearch" type="text" name="q">
+            <button>Search Google</button>
+        </p>
+    </form action="/birds/">  
+    <h2>More Inputs</h2>
+        <input type="checkbox" name="agree_tos" id="agree_tos" checked>
+        <label for="agree_tos"> agree to the terms of service</label>
+        
+    <form>
+
+        
+
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+    <label for="first">Enter First Name</label>
+    <input type="text" name="first" id="first" required>
+    <br>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" required minlength="5" maxlength="20">
+    <button>Submit</button>
+    </form>       
+</body>
+</html>

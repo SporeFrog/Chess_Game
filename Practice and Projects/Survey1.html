@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey1.css">
+</head>
+<body>
+   <header>
+       <h1>Survey Form</h1>
+       <img src="https://images.theconversation.com/files/337593/original/file-20200526-106811-ql6d51.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop" alt="llama" width="400" height="200">
+   </header>
+   <main>
+       <h2>Please Fill Out Form</h2>
+<form>
+       <div>
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+</div>
+<div>
+    <label for="age">Your Age</label>
+    <input type="number" id="age"min="1" max="99" placeholder="Age" required>
+    </div>
+    <div>
+       <label for="country">Where are you from?</label>
+        <input type="text" id="country" placeholder="Country of Origin" minlength="4" required>
+    </div>
+    <div>
+        <label for="email">What is your email?</label>
+        <input type="email" id="email" placeholder="Your email Address" required> 
+    </div>
+    <div>
+        <h2>Complete the sentence: I _____ the previously shown llama.</h2>
+        <ul>
+            <div>
+            
+            <li>
+                <label for="love">love</label><input type="radio" name="feeling" id="love" >
+            </li>
+            </div>
+            <div>
+            <li>
+                <label for="hate">hate</label><input type="radio" name="feeling" id="hate">
+            </li>
+            </div>
+            <div>
+            
+            <li>
+                <label for="loathe">loathe</label> <input type="radio" name="feeling" id="loathe" >
+            </li>
+            </div>
+        </ul>
+    </div>
+    <div>
+        <button>Submit Survey</button>
+    </div>
+</form>
+   </main>
+</body>
+</html>

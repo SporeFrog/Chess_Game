@@ -1,0 +1,47 @@
+Body{
+    background-color:#f4a261;
+    font-family: fantasy, Arial, Helvetica, sans-serif;
+    color:#264653;
+    text-align:center;
+}
+h1:hover{
+    color:#2a9d8f;
+    
+}
+h2:hover{
+    color:#2a9d8f;
+    text-decoration: underline wavy;
+}
+input{
+    background-color:#e9c46a;
+    color:#264653 ;
+}
+
+button{
+    background-color:#2a9d8f;
+    color:oldlace;
+}
+
+button:hover{
+    background-color:#e76f51;
+}
+
+label:hover{
+    color:#2a9d8f;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    border-radius:50%;
+    
+}
+
+img:hover{
+    border: 5px solid yellow;
+    box-sizing: border-box;
+    
+}

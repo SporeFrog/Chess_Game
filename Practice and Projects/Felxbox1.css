@@ -1,0 +1,89 @@
+body{
+   margin:0;
+   display:flex;
+   flex-direction: column;
+}
+
+nav{
+    display: flex;
+    /* background-color: grey; */
+    justify-content: center;
+    margin-top:0px;
+    height: 50px;
+    width:100vw;
+    position: fixed;
+    flex-grow:1;
+    flex-shrink:1;
+
+   
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    width:100vw;
+    height: 100%;
+    background-color:red;
+    justify-content: center;
+    margin:0px;
+    padding:0;
+    
+    
+    
+}
+nav li{
+    margin-right:0;
+    margin-left:0;
+    flex-basis: 1;
+
+}
+
+nav button{
+    background-color: red;
+    color:orange;
+    font-weight: 700;
+    font-size:15px;
+    height: 50px;
+    align-items: center;
+    border: none;
+    width: 33.33vw;
+    
+    
+}
+nav button:hover{
+    background-color: yellow;
+    transition: 1s;
+   color:sienna;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1632154939839-c37ee6d451be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    background-position-y: -400px ;
+    margin:0;
+    height:200px;
+    align-items: center;
+    color:white;
+}
+
+section{
+    margin-right: 10%;
+    margin-left: 10%;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-content: center;
+}
+
+#lightning{
+    height: 300px;
+    weight: 300px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+p   {
+    display:flex;
+    justify-content: center;
+}
