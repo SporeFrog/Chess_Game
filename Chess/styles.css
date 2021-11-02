@@ -82,7 +82,7 @@ ul li{
 
 li i{
   font-size:2rem;
- 
+
 }
 
 .white{
@@ -91,4 +91,14 @@ li i{
 
 .black{
   color:black;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px){
+  li i{
+    font-size:1.5rem;
+  }
 }

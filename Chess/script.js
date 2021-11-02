@@ -63,3 +63,31 @@ $(".g7").html(blackPawn);
 $(".h7").html(blackPawn);
 }
 
+setBoard();
+
+
+// function movePiece(startingP, endingP){
+// var currentPosition = $("'"+"."+startingP+"'")
+// var currentPiece = $("'"+"."+startingP+"'").html
+// var newPosition = $("'"+"."+endingP+"'")
+
+// currentPosition.html(currentPiece,"")
+
+// newPosition.html(currentPiece)
+
+// }
+$("li").on("click", function(){
+
+var currentPiece = this.innerHTML;
+console.log(currentPiece);
+
+return(currentPiece);
+
+
+});
+
+
+
+
+
+

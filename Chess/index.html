@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/4bc2c0c0d8.js" crossorigin="anonymous"></script>
   <title>Chess Project</title>
+  <link rel="icon" type="image/png" href="knight-favicon.png">
+  
 </head>
 <body>
   <h1>Chess Project</h1>
@@ -97,9 +99,13 @@
 
 </div>
 </main>
-<div>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dolorum aspernatur aut veritatis dolorem. Earum exercitationem quasi expedita molestiae facere officiis. Non culpa rerum tempore asperiores quos dolore quasi laborum.</p>
-</div>
+<form action="">
+  <label for="startingP">Piece's Starting Position</label>
+  <input name="startingP" type="text">
+  <label for="endingP">Piece's Ending Position</label>
+  <input name="endingP" type="text">
+  <button class="confirmBtn">Confirm Move</button>
+</form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 <script src="/script.js"></script>
 </body>
