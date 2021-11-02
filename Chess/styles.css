@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+ background-color: #81b29a;
   height:100vh;
 
 }
@@ -18,9 +18,10 @@ body {
 .boardFrame{
   width: 60vw;
   height: 60vw;
-  border:1px black solid;
+  border:2px black solid;
   display:flex;
   margin: 3rem auto;
+  box-shadow: #486457 10px 10px;
 }
 
 
@@ -39,7 +40,7 @@ ul li{
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color:#ffcdb2;
+  background-color:#eca57f;
 }
 
 .col-A li:nth-of-type(2n){
@@ -81,6 +82,7 @@ ul li{
 
 li i{
   font-size:2rem;
+ 
 }
 
 .white{
