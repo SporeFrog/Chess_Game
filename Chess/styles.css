@@ -16,8 +16,8 @@ body {
 }
 
 .boardFrame{
-  width: 60vw;
-  height: 60vw;
+  width: 55vh;
+  height: 55vh;
   border:2px black solid;
   display:flex;
   margin: 3rem auto;
@@ -82,9 +82,13 @@ ul li{
 
 li i{
   font-size:2rem;
+  cursor:pointer;
 
 }
-
+.selected{
+  background-color: green !important;
+ 
+}
 .white{
   color:white;
 }
@@ -101,4 +105,12 @@ form{
   li i{
     font-size:1.5rem;
   }
+  .boardFrame{
+    width:80vw;
+    height:80vw;
+  }
+}
+
+.hidden{
+  display:none;
 }

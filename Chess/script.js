@@ -1,29 +1,32 @@
-var whiteRook = '<i class="fas fa-chess-rook white"></i>'
+var whiteRook = '<i class="fas fa-chess-rook white"><span class="hidden>x</span></i>'
 
-var blackRook = '<i class="fas fa-chess-rook black"></i>'
+var blackRook = '<i class="fas fa-chess-rook black"><span class="hidden>x</span></i>'
 
-var whiteKnight ='<i class="fas fa-chess-knight white"></i>'
+var whiteKnight ='<i class="fas fa-chess-knight white"><span class="hidden>x</span></i>'
 
-var blackKnight ='<i class="fas fa-chess-knight black"></i>'
+var blackKnight ='<i class="fas fa-chess-knight black"><span class="hidden>x</span></i>'
 
-var whiteBishop = '<i class="fas fa-chess-bishop white"></i>'
+var whiteBishop = '<i class="fas fa-chess-bishop white"><span class="hidden>x</span></i>'
 
-var blackBishop = '<i class="fas fa-chess-bishop black"></i>'
+var blackBishop = '<i class="fas fa-chess-bishop black"><span class="hidden>x</span></i>'
 
-var whiteKing ='<i class="fas fa-chess-king white"></i>'
+var whiteKing ='<i class="fas fa-chess-king white"><span class="hidden>x</span></i>'
 
-var blackKing ='<i class="fas fa-chess-king black"></i>'
+var blackKing ='<i class="fas fa-chess-king black"><span class="hidden>x</span></i>'
 
-var whiteQueen = '<i class="fas fa-chess-queen white"></i>'
-var blackQueen = '<i class="fas fa-chess-queen black"></i>'
+var whiteQueen = '<i class="fas fa-chess-queen white"><span class="hidden>x</span></i>'
+var blackQueen = '<i class="fas fa-chess-queen black"><span class="hidden>x</span></i>'
 
-var whitePawn = '<i class="fas fa-chess-pawn white"></i>'
+var whitePawn = '<i class="fas fa-chess-pawn white"><span class="hidden>x</span></i>'
 
-var blackPawn = '<i class="fas fa-chess-pawn black"></i>'
+var blackPawn = '<i class="fas fa-chess-pawn black"><span class="hidden>x</span></i>'
 
 
 
 function setBoard(){
+//Clearing Entire Board
+$("li").html("");
+
 //White Pieces
 $(".a1").html(whiteRook);
 $(".b1").html(whiteKnight);
@@ -61,30 +64,57 @@ $(".e7").html(blackPawn);
 $(".f7").html(blackPawn);
 $(".g7").html(blackPawn);
 $(".h7").html(blackPawn);
+
+$('li').removeClass('selected');
+addEvent();
 }
 
 setBoard();
-
-
-// function movePiece(startingP, endingP){
-// var currentPosition = $("'"+"."+startingP+"'")
-// var currentPiece = $("'"+"."+startingP+"'").html
-// var newPosition = $("'"+"."+endingP+"'")
-
-// currentPosition.html(currentPiece,"")
-
-// newPosition.html(currentPiece)
-
-// }
-$("li").on("click", function(){
-
-var currentPiece = this.innerHTML;
+addEvent();
+$('.resetBtn').on("click",setBoard);
+function addEvent(){
+$("li i").on("click", function(){
+var currentSpace = this.parentElement.classList;
+var currentPiece = this.parentElement.innerHTML;
 console.log(currentPiece);
-
-return(currentPiece);
-
-
+console.log(currentSpace);
+$('li').removeClass('selected');
+this.parentElement.classList.add("selected");
 });
+};
+
+function movePiece(startingCoordinate, endingCoordinate){
+var selectedPiece = String("."+startingCoordinate);
+var newSpace = String("."+ endingCoordinate);
+var movingPiece = document.querySelector(selectedPiece).innerHTML;
+// document.querySelector(selectedPiece).classList.add("selected");
+// document.querySelector(newSpace).classList.add("selected");
+console.log(movingPiece);
+document.querySelector(newSpace).innerHTML = movingPiece;
+document.querySelector(selectedPiece).innerHTML = "";
+return console.log('moved piece')
+}
+
+
+
+// $("li").on("click", function(){
+
+// var currentPiece = this.innerHTML;
+// var currentPosition = this;
+// console.log(currentPiece);
+
+// $("li").on("click", function(){
+
+// var newPosition = this;
+
+// newPosition.innerHTML = currentPiece;
+// currentPosition.innerHTML = '';
+// return;
+// })
+
+
+
+// });
 
 
 
