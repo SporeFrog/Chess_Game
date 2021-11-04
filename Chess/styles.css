@@ -89,6 +89,11 @@ li i{
   background-color: green !important;
  
 }
+
+.notSelected{
+  cursor: pointer;
+}
+
 .white{
   color:white;
 }
